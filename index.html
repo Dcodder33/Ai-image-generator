@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="image-generator">
+    <div class="content">
+        <h1>AI Image Generator Tool (Hugging Face API)</h1>
+        <p>Convert your text into an image using this JavaScript-powered AI Image Generator.</p>
+
+        <!-- 👇 FORM for input and image count -->
+        <form class="generate-form">
+            <input type="text" name="prompt" class="prompt-input" placeholder="Enter prompt..." required>
+            <select name="quantity" class="img-quantity" required>
+                <option value="1">1 Image</option>
+                <option value="2">2 Images</option>
+                <option value="3">3 Images</option>
+                <option value="4">4 Images</option>
+            </select>
+            <button type="submit" class="generate-btn">Generate</button>
+        </form>
+        
+    </div>
+</section>
+
+<!-- 👇 Image output section -->
+<section class="image-gallery">
+    <!-- JS will insert image cards here -->
+</section>
+
+<script src="App.js"></script>
+</body>
+</html>
